@@ -51,11 +51,11 @@ type Product = {
 
 // Kodu buraya yazalım...
 const mockProducts: Product[] = []
-let i=0;
-for(i: i<10; i++ ){
+
+for(let i=0; i<10; i++ ){
     mockProducts.push({
       name:"coffee",
-      price:12,  
+      price:12 +i,  
     });
 }
 
@@ -63,8 +63,8 @@ console.log(mockProducts)
 
 const getTotal = (products:Product[]) => {
     let result = 0;
-    products.forEach(product) => {
-        result += mockProducts.price;
-    }
-    return XPathResult;
+    products.forEach((product) => {
+        result += product.price;
+    });
+    return result;
 }

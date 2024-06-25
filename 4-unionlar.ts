@@ -6,7 +6,7 @@
 
 
 // Kodu buraya yazalım...
-let highScore: number | boolean
+const highScore: (number | boolean) = false
 
 
 
@@ -19,10 +19,10 @@ let highScore: number | boolean
 
 
 // Kodu buraya yazalım...
-const stuff: (string | number)[] = ["x",2,6];
 
-const stuff2: string[] | number[] = [];
+const stuff : (number | string)[] = ["hello",2]
 
+const stuff2: (number[] | string[]) = ["hello",2]
 
 
 // **********************************************
@@ -97,9 +97,7 @@ type HSL = {
 
 
 // Kodu buraya yazalım...
-const colors:(RGB | HSL) = [{
-    
-}]
+const colors:(RGB | HSL)[] = []
 
 
 
@@ -122,8 +120,8 @@ const greet = (names:string | string[]) =>{
     console.log("Merhaba ${names}")
  }
  else{
-    names.forEach(name ) => {
+    names.forEach((name) => {
         console.log("Merhaba ${names}")
-    }
+    })
  }
 }

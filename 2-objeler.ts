@@ -2,9 +2,17 @@
 // tanımlayalım. "originalTitle" opsiyonel olsun
 
 
-// interface Movie {
-// Kodumuzu buraya yazıp interface'in yorum satırlarını kaldıralım...
-//}
+interface Movie {
+    title:string,
+    originalTitle?:string,
+    director: string,
+    releaseYear: number,
+    boxOffice: {
+        budget: number,
+        grossUS: number,
+        grossWorldwide: number,
+}
+ }
 
 const dune: Movie = {
     title: "Dune",

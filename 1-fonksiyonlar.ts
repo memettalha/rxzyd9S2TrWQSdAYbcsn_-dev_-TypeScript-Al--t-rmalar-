@@ -16,7 +16,7 @@
 // Kodu buraya yazalım...
 
 
-const kardesPayi(name?:string){
+const kardesPayi = (name?:string) =>{
     console.log("bir tane {name} için, bir de benim için")
 }
 kardesPayi("mehmet")
